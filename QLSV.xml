@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSSV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="QLSV.xsd">
+    
+    <!-- Danh sách KHOA -->
+    <KHOA>
+        <MA>CNTT</MA>
+        <TEN>congnghethongtin</TEN>
+    </KHOA>
+    <KHOA>
+        <MA>KTKT</MA>
+        <TEN>kinhtevakinhte</TEN>
+    </KHOA>
+    <KHOA>
+        <MA>NNNN</MA>
+        <TEN>ngoaingunngoaithuong</TEN>
+    </KHOA>
+    
+    <!-- Danh sách LOP -->
+    <LOP>
+        <MA>CNTT01</MA>
+        <TEN>Cong nghe thong tin 01</TEN>
+        <QUANLY>CNTT</QUANLY>
+    </LOP>
+    <LOP>
+        <MA>CNTT02</MA>
+        <TEN>Cong nghe thong tin 02</TEN>
+        <QUANLY>CNTT</QUANLY>
+    </LOP>
+    <LOP>
+        <MA>KTKT01</MA>
+        <TEN>Kinh te kinh te 01</TEN>
+        <QUANLY>KTKT</QUANLY>
+    </LOP>
+    <LOP>
+        <MA>NNNN01</MA>
+        <TEN>Ngoai ngu ngoai thuong 01</TEN>
+        <QUANLY>NNNN</QUANLY>
+    </LOP>
+    
+    <!-- Danh sách SINHVIEN -->
+    <SINHVIEN>
+        <MSSV>SV001</MSSV>
+        <HOTEN>Nguyen Van An</HOTEN>
+        <EMAIL>nguyenvanan@email.com</EMAIL>
+        <DIACHI>123 Nguyen Hue, Quan 1, TP.HCM</DIACHI>
+        <SDT>0123456789</SDT>
+        <THUOC>CNTT01</THUOC>
+    </SINHVIEN>
+    <SINHVIEN>
+        <MSSV>SV002</MSSV>
+        <HOTEN>Tran Thi Binh</HOTEN>
+        <EMAIL>tranthibinh@email.com</EMAIL>
+        <DIACHI>456 Le Loi, Quan 3, TP.HCM</DIACHI>
+        <SDT>0987654321</SDT>
+        <THUOC>CNTT01</THUOC>
+    </SINHVIEN>
+    <SINHVIEN>
+        <MSSV>SV003</MSSV>
+        <HOTEN>Le Van Cuong</HOTEN>
+        <EMAIL>levancuong@email.com</EMAIL>
+        <DIACHI>789 Tran Hung Dao, Quan 5, TP.HCM</DIACHI>
+        <SDT>0912345678</SDT>
+        <THUOC>CNTT02</THUOC>
+    </SINHVIEN>
+    <SINHVIEN>
+        <MSSV>SV004</MSSV>
+        <HOTEN>Pham Thi Dung</HOTEN>
+        <EMAIL>phamthidung@email.com</EMAIL>
+        <DIACHI>321 Vo Van Tan, Quan 3, TP.HCM</DIACHI>
+        <SDT>0934567890</SDT>
+        <THUOC>KTKT01</THUOC>
+    </SINHVIEN>
+    <SINHVIEN>
+        <MSSV>SV005</MSSV>
+        <HOTEN>Hoang Van Em</HOTEN>
+        <EMAIL>hoangvanem@email.com</EMAIL>
+        <DIACHI>654 Hai Ba Trung, Quan 1, TP.HCM</DIACHI>
+        <SDT>0945678901</SDT>
+        <THUOC>NNNN01</THUOC>
+    </SINHVIEN>
+</DSSV>
