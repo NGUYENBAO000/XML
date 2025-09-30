@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Kiểu dữ liệu dùng chung cho MA của LOP và KHOA -->
+    <xs:simpleType name="MaType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Kiểu dữ liệu dùng chung cho TEN của LOP và KHOA -->
+    <xs:simpleType name="TenType">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Ràng buộc: Số điện thoại bắt đầu là số 0, theo sau là 9 số -->
+    <xs:simpleType name="SDTType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="0[0-9]{9}"/>
+            <xs:length value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Ràng buộc: Tên khoa chỉ chứa các ký tự từ a-z -->
+    <xs:simpleType name="TenKhoaType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]+"/>
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Định nghĩa phần tử KHOA -->
+    <xs:complexType name="KHOAType">
+        <xs:sequence>
+            <xs:element name="MA" type="MaType"/>
+            <xs:element name="TEN" type="TenKhoaType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Định nghĩa phần tử LOP -->
+    <xs:complexType name="LOPType">
+        <xs:sequence>
+            <xs:element name="MA" type="MaType"/>
+            <xs:element name="TEN" type="TenType"/>
+            <xs:element name="QUANLY" type="MaType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Định nghĩa phần tử SINHVIEN -->
+    <xs:complexType name="SINHVIENType">
+        <xs:sequence>
+            <xs:element name="MSSV">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="10"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="HOTEN">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="50"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="EMAIL">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:maxLength value="150"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="DIACHI" type="xs:string"/>
+            <xs:element name="SDT" type="SDTType"/>
+            <xs:element name="THUOC" type="MaType"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Phần tử gốc DSSV -->
+    <xs:element name="DSSV">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="KHOA" type="KHOAType" maxOccurs="unbounded"/>
+                <xs:element name="LOP" type="LOPType" maxOccurs="unbounded"/>
+                <xs:element name="SINHVIEN" type="SINHVIENType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+        
+        <!-- Khóa chính cho KHOA -->
+        <xs:key name="KhoaKey">
+            <xs:selector xpath="KHOA"/>
+            <xs:field xpath="MA"/>
+        </xs:key>
+        
+        <!-- Khóa chính cho LOP -->
+        <xs:key name="LopKey">
+            <xs:selector xpath="LOP"/>
+            <xs:field xpath="MA"/>
+        </xs:key>
+        
+        <!-- Khóa chính cho SINHVIEN -->
+        <xs:key name="SinhVienKey">
+            <xs:selector xpath="SINHVIEN"/>
+            <xs:field xpath="MSSV"/>
+        </xs:key>
+        
+        <!-- Khóa ngoại QUANLY từ LOP tham chiếu đến KHOA -->
+        <xs:keyref name="LopQuanLyKhoaRef" refer="KhoaKey">
+            <xs:selector xpath="LOP"/>
+            <xs:field xpath="QUANLY"/>
+        </xs:keyref>
+        
+        <!-- Khóa ngoại THUOC từ SINHVIEN tham chiếu đến LOP -->
+        <xs:keyref name="SinhVienThuocLopRef" refer="LopKey">
+            <xs:selector xpath="SINHVIEN"/>
+            <xs:field xpath="THUOC"/>
+        </xs:keyref>
+    </xs:element>
+</xs:schema>

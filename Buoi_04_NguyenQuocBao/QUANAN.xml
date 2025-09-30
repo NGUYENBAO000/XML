@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<qa:QUANAN xmlns:qa="http://www.quanan.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.quanan.com QUANAN.xsd">
+    
+    <!-- Danh sách NHANVIEN -->
+    <qa:NHANVIEN>
+        <qa:MANV>NV001</qa:MANV>
+        <qa:TENNV>Nguyen Van An</qa:TENNV>
+        <qa:SDT>0123456789</qa:SDT>
+        <qa:DIACHI>123 Nguyen Hue, Q1, TP.HCM</qa:DIACHI>
+        <qa:GIOITINH>Nam</qa:GIOITINH>
+        <qa:USERNAME>nguyenvanan</qa:USERNAME>
+        <qa:PASSWORD>password123</qa:PASSWORD>
+    </qa:NHANVIEN>
+    <qa:NHANVIEN>
+        <qa:MANV>NV002</qa:MANV>
+        <qa:TENNV>Tran Thi Binh</qa:TENNV>
+        <qa:SDT>0987654321</qa:SDT>
+        <qa:DIACHI>456 Le Loi, Q3, TP.HCM</qa:DIACHI>
+        <qa:GIOITINH>Nu</qa:GIOITINH>
+        <qa:USERNAME>tranthib</qa:USERNAME>
+        <qa:PASSWORD>mypassword456</qa:PASSWORD>
+    </qa:NHANVIEN>
+    <qa:NHANVIEN>
+        <qa:MANV>NV003</qa:MANV>
+        <qa:TENNV>Le Van Cuong</qa:TENNV>
+        <qa:SDT>0912345678</qa:SDT>
+        <qa:DIACHI>789 Tran Hung Dao, Q5, TP.HCM</qa:DIACHI>
+        <qa:GIOITINH>Nam</qa:GIOITINH>
+        <qa:USERNAME>levancuong</qa:USERNAME>
+        <qa:PASSWORD>securepass789</qa:PASSWORD>
+    </qa:NHANVIEN>
+    <qa:NHANVIEN>
+        <qa:MANV>NV004</qa:MANV>
+        <qa:TENNV>Pham Thi Dung</qa:TENNV>
+        <qa:SDT>0934567890</qa:SDT>
+        <qa:DIACHI>321 Vo Van Tan, Q3, TP.HCM</qa:DIACHI>
+        <qa:GIOITINH>Nu</qa:GIOITINH>
+        <qa:USERNAME>phamthidung</qa:USERNAME>
+        <qa:PASSWORD>password9999</qa:PASSWORD>
+    </qa:NHANVIEN>
+    <qa:NHANVIEN>
+        <qa:MANV>NV005</qa:MANV>
+        <qa:TENNV>Hoang Van Em</qa:TENNV>
+        <qa:SDT>0945678901</qa:SDT>
+        <qa:DIACHI>654 Hai Ba Trung, Q1, TP.HCM</qa:DIACHI>
+        <qa:GIOITINH>Nam</qa:GIOITINH>
+        <qa:USERNAME>hoangvanem</qa:USERNAME>
+        <qa:PASSWORD>emhoang1234</qa:PASSWORD>
+    </qa:NHANVIEN>
+    
+    <!-- Danh sách HOADON -->
+    <qa:HOADON>
+        <qa:SOHD>1</qa:SOHD>
+        <qa:NGAYLAP>2025-09-15</qa:NGAYLAP>
+        <qa:TONGTIEN>150000</qa:TONGTIEN>
+        <qa:LAP_HD>NV001</qa:LAP_HD>
+    </qa:HOADON>
+    <qa:HOADON>
+        <qa:SOHD>2</qa:SOHD>
+        <qa:NGAYLAP>2025-09-16</qa:NGAYLAP>
+        <qa:TONGTIEN>200000</qa:TONGTIEN>
+        <qa:LAP_HD>NV002</qa:LAP_HD>
+    </qa:HOADON>
+    <qa:HOADON>
+        <qa:SOHD>3</qa:SOHD>
+        <qa:NGAYLAP>2025-09-17</qa:NGAYLAP>
+        <qa:TONGTIEN>180000</qa:TONGTIEN>
+        <qa:LAP_HD>NV003</qa:LAP_HD>
+    </qa:HOADON>
+    <qa:HOADON>
+        <qa:SOHD>4</qa:SOHD>
+        <qa:NGAYLAP>2025-09-18</qa:NGAYLAP>
+        <qa:TONGTIEN>250000</qa:TONGTIEN>
+        <qa:LAP_HD>NV004</qa:LAP_HD>
+    </qa:HOADON>
+    <qa:HOADON>
+        <qa:SOHD>5</qa:SOHD>
+        <qa:NGAYLAP>2025-09-19</qa:NGAYLAP>
+        <qa:TONGTIEN>300000</qa:TONGTIEN>
+        <qa:LAP_HD>NV005</qa:LAP_HD>
+    </qa:HOADON>
+    
+    <!-- Danh sách MON -->
+    <qa:MON>
+        <qa:MAMON>M001</qa:MAMON>
+        <qa:TENMON>Com suon</qa:TENMON>
+        <qa:GIA>35000</qa:GIA>
+        <qa:HINHANH>comsuon.jpg</qa:HINHANH>
+    </qa:MON>
+    <qa:MON>
+        <qa:MAMON>M002</qa:MAMON>
+        <qa:TENMON>Com ga</qa:TENMON>
+        <qa:GIA>40000</qa:GIA>
+        <qa:HINHANH>comga.jpg</qa:HINHANH>
+    </qa:MON>
+    <qa:MON>
+        <qa:MAMON>M003</qa:MAMON>
+        <qa:TENMON>Pho bo</qa:TENMON>
+        <qa:GIA>45000</qa:GIA>
+        <qa:HINHANH>phobo.jpg</qa:HINHANH>
+    </qa:MON>
+    <qa:MON>
+        <qa:MAMON>M004</qa:MAMON>
+        <qa:TENMON>Bun cha</qa:TENMON>
+        <qa:GIA>40000</qa:GIA>
+        <qa:HINHANH>buncha.jpg</qa:HINHANH>
+    </qa:MON>
+    <qa:MON>
+        <qa:MAMON>M005</qa:MAMON>
+        <qa:TENMON>Banh mi</qa:TENMON>
+        <qa:GIA>20000</qa:GIA>
+        <qa:HINHANH>banhmi.jpg</qa:HINHANH>
+    </qa:MON>
+    
+    <!-- Danh sách BAN -->
+    <qa:BAN>
+        <qa:TENBAN>Ban 01</qa:TENBAN>
+        <qa:SOBAN>1</qa:SOBAN>
+        <qa:THANHTOAN>1</qa:THANHTOAN>
+    </qa:BAN>
+    <qa:BAN>
+        <qa:TENBAN>Ban 02</qa:TENBAN>
+        <qa:SOBAN>2</qa:SOBAN>
+        <qa:THANHTOAN>2</qa:THANHTOAN>
+    </qa:BAN>
+    <qa:BAN>
+        <qa:TENBAN>Ban 03</qa:TENBAN>
+        <qa:SOBAN>3</qa:SOBAN>
+        <qa:THANHTOAN>3</qa:THANHTOAN>
+    </qa:BAN>
+    <qa:BAN>
+        <qa:TENBAN>Ban 04</qa:TENBAN>
+        <qa:SOBAN>4</qa:SOBAN>
+        <qa:THANHTOAN>4</qa:THANHTOAN>
+    </qa:BAN>
+    <qa:BAN>
+        <qa:TENBAN>Ban 05</qa:TENBAN>
+        <qa:SOBAN>5</qa:SOBAN>
+        <qa:THANHTOAN>5</qa:THANHTOAN>
+    </qa:BAN>
+    
+    <!-- Danh sách CTHD (Chi tiết hóa đơn) - Quan hệ nhiều-nhiều giữa HOADON và MON -->
+    <qa:CTHD>
+        <qa:SOHD_CTHD>1</qa:SOHD_CTHD>
+        <qa:MAMON_CTHD>M001</qa:MAMON_CTHD>
+        <qa:SOLUONG>2</qa:SOLUONG>
+    </qa:CTHD>
+    <qa:CTHD>
+        <qa:SOHD_CTHD>1</qa:SOHD_CTHD>
+        <qa:MAMON_CTHD>M002</qa:MAMON_CTHD>
+        <qa:SOLUONG>2</qa:SOLUONG>
+    </qa:CTHD>
+    <qa:CTHD>
+        <qa:SOHD_CTHD>2</qa:SOHD_CTHD>
+        <qa:MAMON_CTHD>M003</qa:MAMON_CTHD>
+        <qa:SOLUONG>3</qa:SOLUONG>
+    </qa:CTHD>
+    <qa:CTHD>
+        <qa:SOHD_CTHD>2</qa:SOHD_CTHD>
+        <qa:MAMON_CTHD>M005</qa:MAMON_CTHD>
+        <qa:SOLUONG>5</qa:SOLUONG>
+    </qa:CTHD>
+    <qa:CTHD>
+        <qa:SOHD_CTHD>3</qa:SOHD_CTHD>
+        <qa:MAMON_CTHD>M004</qa:MAMON_CTHD>
+        <qa:SOLUONG>4</qa:SOLUONG>
+    </qa:CTHD>
+    <qa:CTHD>
+        <qa:SOHD_CTHD>4</qa:SOHD_CTHD>
+        <qa:MAMON_CTHD>M001</qa:MAMON_CTHD>
+        <qa:SOLUONG>5</qa:SOLUONG>
+    </qa:CTHD>
+    <qa:CTHD>
+        <qa:SOHD_CTHD>5</qa:SOHD_CTHD>
+        <qa:MAMON_CTHD>M002</qa:MAMON_CTHD>
+        <qa:SOLUONG>6</qa:SOLUONG>
+    </qa:CTHD>
+</qa:QUANAN>
